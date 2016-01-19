@@ -16,6 +16,6 @@ checkstyle {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'Geometry'
+        attributes 'Main-Class': 'Test'
         }
 }
