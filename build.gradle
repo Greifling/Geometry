@@ -1,0 +1,21 @@
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.puppycrawl.tools:checkstyle:5.9'
+}
+
+checkstyle {
+    ignoreFailures = true
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Geometry'
+        }
+}
