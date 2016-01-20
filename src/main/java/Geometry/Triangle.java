@@ -1,8 +1,14 @@
-public  class  Triangle {
+import java.lang
+
+public  class  Triangle implements Geometry {
+    private double length;
 	public Triangle(){
+        this.length = length;
     }
-    public  double  getArea();{
+    public  double  getArea(){
+        return (this.length*this.length*Math.sqrt(3)/4.0);
     }
-    public  double  getPerimeter();{
+    public  double  getPerimeter(){
+        return this.length*3;
     }
 }
