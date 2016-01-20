@@ -1,4 +1,4 @@
-import java.lang
+import java.lang;
 
 public  class  Triangle implements Geometry {
     private double length;

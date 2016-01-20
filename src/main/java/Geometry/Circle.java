@@ -1,8 +1,8 @@
-import java.lang
+import java.lang;
 
 public  class  Circle implements Geometry{
     private double radius;
-	public Circle(radius){
+	public Circle(double radius){
         this.radius = radius;
     }
     public  double  getArea(){
