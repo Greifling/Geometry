@@ -11,4 +11,17 @@ public  class  Circle implements Geometry{
     public  double  getPerimeter(){
         return 2*Math.PI*this.radius;
     }
+    public int compareTo(obj opposite){
+        if ((this.getPerimeter() == opposite.getPerimeter())){
+            if (this.getPerimeter() == opposite.getArea())){
+                return 0;
+            }
+            else {
+                return (int)(this.getArea() - opposite.getArea());
+            }
+        }
+        else{
+            return (int)(this.getPerimeter() - opposite.getPerimeter());
+        }
+    }
 }

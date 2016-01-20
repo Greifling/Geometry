@@ -11,4 +11,17 @@ public  class  Triangle implements Geometry {
     public  double  getPerimeter(){
         return this.length*3;
     }
+    public int compareTo(obj opposite){
+        if ((this.getPerimeter() == opposite.getPerimeter())){
+            if (this.getPerimeter() == opposite.getArea())){
+                return 0;
+            }
+            else {
+                return (int)(this.getArea() - opposite.getArea());
+            }
+        }
+        else{
+            return (int)(this.getPerimeter() - opposite.getPerimeter());
+        }
+    }
 }
