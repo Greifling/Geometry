@@ -1,4 +1,4 @@
-import java.lang;
+import java.lang.Math;
 
 public  class  Circle implements Geometry{
     private double radius;
