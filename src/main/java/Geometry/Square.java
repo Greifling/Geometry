@@ -9,7 +9,7 @@ public  class  Square implements Geometry{
     public  double  getPerimeter(){
         return this.length*4;
     }
-    public int compareTo(object opposite){
+    public int compareTo(Object opposite){
         if ((this.getPerimeter() == opposite.getPerimeter())){
             if ((this.getPerimeter() == opposite.getArea())){
                 return 0;
